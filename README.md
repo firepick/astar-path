@@ -10,7 +10,7 @@ of a PathFactory instance when given a start node and a goal node. Here we creat
 a three dimensional PathFactory that forbids x or y axis movement below a zcruise height
 of 15 and also forbids z-movement below zero:
 
-<code>
+```JS
 var zcruise = 15;
 var pf = new PathFactory({
     dimensions: 3,
@@ -30,7 +30,7 @@ var pf = new PathFactory({
         return n;
     },
 });
-</code>
+```
 
 <a href="https://github.com/firepick/astar-path/wiki/images/constrainzy.png">
     <img src="https://github.com/firepick/astar-path/wiki/images/constrainzy.png" height=400px></a>
