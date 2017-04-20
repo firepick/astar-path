@@ -1,8 +1,7 @@
 {
   "name": "astar-path",
   "version": "0.1.0",
-  "description": "Find least time 3D ballistic flight path between start and goal nodes. Computed trajectory considers projectile position, velocity and acceleration constraints as well as optional start/goal trajectory constraints. Implemented using heavily optimized A* algorithm, astar-path can compute a constrained 3D path in under 20ms and can be used for CNC path planning applications such as pick-and-place",
-  "main": "index.js",
+  "description": "Find least time 3D ballistic flight path between start and goal nodes.",
   "directories": {
     "test": "test",
     "src": "src"
@@ -34,7 +33,7 @@
     "url": "git+https://github.com/firepick/astar-path.git"
   },
   "keywords": [
-    "a* algorithm",
+    "a-star algorithm",
     "graphs",
     "trajectory",
     "ballistics",
