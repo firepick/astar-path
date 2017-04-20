@@ -53,5 +53,8 @@ Here is a typical trajectory computed by `findPath`:
 <a href="https://github.com/firepick/astar-path/wiki/images/constrainzy.png">
     <img src="https://github.com/firepick/astar-path/wiki/images/constrainzy.png" height=400px></a>
 
+The `findPath` implementation uses a heavily optimized _A*_  algorithm that can calculate a constrained trajectory
+in under 20ms.
+
 ### Installation
 `npm install astar-path`
