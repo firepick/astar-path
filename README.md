@@ -5,9 +5,18 @@ position, velocity, and accelerations constraints as well as optional
 user defined node constraints. 
 
 ### PathNode
-Trajectories are defined by a PathNode array that is computed by the `findPath` method
-of a PathFactory instance when given a start node and a goal node. Here we create
-a three dimensional PathFactory that forbids x or y axis movement below a zcruise height
+Trajectories are defined by a `PathNode` array. Each `PathNode` has position, velocity and acceleration vectors (i.e., s,v,a).
+Here we define start and goal nodes of a desired trajectory. Both start and goal nodes have zero velocity and acceleration:
+
+```JS
+var start = new PathNode([200,-299,0]); // x,y,z position
+var goal = new PathNode([-200,299,0]); // x,y,z position
+```
+
+### PathFactory
+Trajectories are created by a `PathFactory`.
+Here we create a three dimensional PathFactory that forbids x or y axis 
+movement below a zcruise height
 of 15 and also forbids z-movement below zero:
 
 ```JS
@@ -31,6 +40,15 @@ var pf = new PathFactory({
     },
 });
 ```
+
+### PathFactory
+Trajectories are created by the `findPath` method, that takes start and goal nodes:
+
+```JS
+var result = pf.findPath(start,goal);
+```
+
+Here is a typical trajectory computed by `findPath`:
 
 <a href="https://github.com/firepick/astar-path/wiki/images/constrainzy.png">
     <img src="https://github.com/firepick/astar-path/wiki/images/constrainzy.png" height=400px></a>
