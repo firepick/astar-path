@@ -42,19 +42,19 @@ var pf = new PathFactory({
 ```
 
 ### PathFactory
-Trajectories are created by the `findPath` method, that takes start and goal nodes:
+Given a start and goal `PathNode`, you can quickly create a trajectory by calling the `findPath` method:
 
 ```JS
 var result = pf.findPath(start,goal);
 ```
 
-Here is a typical trajectory computed by `findPath`:
+Here is a typical trajectory computed by `findPath` in under 20ms:
 
 <a href="https://github.com/firepick/astar-path/wiki/images/constrainzy.png">
     <img src="https://github.com/firepick/astar-path/wiki/images/constrainzy.png" height=400px></a>
 
-The `findPath` implementation uses a heavily optimized _A*_  algorithm that can calculate a constrained trajectory
-in under 20ms.
+<a href="https://github.com/firepick/astar-path/wiki/images/constrainxyz.png">
+    <img src="https://github.com/firepick/astar-path/wiki/images/constrainxyz.png" height=400px></a>
 
 ### Installation
 `npm install astar-path`
