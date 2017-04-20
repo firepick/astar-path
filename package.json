@@ -1,6 +1,6 @@
 {
   "name": "astar-path",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Find least time 3D ballistic flight path between start and goal nodes.",
   "directories": {
     "test": "test",
