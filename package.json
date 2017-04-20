@@ -1,0 +1,51 @@
+{
+  "name": "astar-path",
+  "version": "0.1.0",
+  "description": "Find least time 3D ballistic flight path between start and goal nodes. Computed trajectory considers projectile position, velocity and acceleration constraints as well as optional start/goal trajectory constraints. Implemented using heavily optimized A* algorithm, astar-path can compute a constrained 3D path in under 20ms and can be used for CNC path planning applications such as pick-and-place",
+  "main": "index.js",
+  "directories": {
+    "test": "test",
+    "src": "src"
+  },
+  "dependencies": {
+    "mathjs": "^3.9.2"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-jshint": "1.1.0",
+    "grunt-contrib-uglify": "2.1.0",
+    "grunt-contrib-watch": "1.0.0",
+    "grunt-jsbeautifier": "^0.2.13",
+    "grunt-mocha-test": "~0.13.2",
+    "grunt-npm-install": "^0.3.1",
+    "grunt-release": "^0.14.0",
+    "grunt-simple-mocha": "0.4.1",
+    "mocha": "^3.2.0",
+    "should": "^11.2.0"
+  },
+  "scripts": {
+    "test": "mocha -w -R min --inline-diffs",
+    "testg": "mocha -w -R min --inline-diffs -g TESTTEST",
+    "testx": "mocha -w --inline-diffs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/firepick/astar-path.git"
+  },
+  "keywords": [
+    "a* algorithm",
+    "graphs",
+    "trajectory",
+    "ballistics",
+    "flight path",
+    "FirePick",
+    "firenodejs"
+  ],
+  "author": "Karl Lew",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/firepick/astar-path/issues"
+  },
+  "homepage": "https://github.com/firepick/astar-path"
+}

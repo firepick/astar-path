@@ -1,3 +1,7 @@
+*.wiki
+results.txt
+*bundle.js
+
 # Logs
 logs
 *.log
