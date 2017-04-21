@@ -413,7 +413,7 @@ var PathFactory = require("../src/PathFactory");
                 dimensions: 3,
                 maxVelocity: [10,10,10],
                 maxAcceleration: [5,5,5],
-                maxIterations: 1000,
+                maxIterations: 500,
             });
             msElapsedTotal += testFindPath(pf, start, goal, verbose).stats.ms;
         }

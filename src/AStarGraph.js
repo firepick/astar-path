@@ -100,4 +100,3 @@ var PriorityQ = require("./PriorityQ");
 
     module.exports = exports.AStarGraph = AStarGraph;
 })(typeof exports === "object" ? exports : (exports = {}));
-

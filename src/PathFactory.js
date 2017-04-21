@@ -382,13 +382,6 @@ var PriorityQ = require("./PriorityQ");
             var t = ds.map((s,i) => this.tsvva(s, n1.v[i], goal.v[i], this.aMax[i]));
             return mathjs.sum(t);
         }
-        cost_tsvva_explore(n1,goal) { // explore aggressively with maximum speed
-            return n1.v.reduce((acc,v,i) => 
-                acc + 
-                +(this.vMax[i]-v)/this.vMax[i]
-                +this.tsvva(goal.s[i]-n1.s[i], n1.v[i], goal.v[i], this.aMax[i]),
-                0); 
-        }
         estimateCost(n1, goal) {
             if (n1.h) {
                 return n1.h; // cached estimate
